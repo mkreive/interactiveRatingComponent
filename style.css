@@ -32,8 +32,11 @@ body {
 
 .review,
 .thankyou {
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
     width: 25%;
-    height: 45%;
+    height: 48%;
     margin: 25vh auto;
     padding: 2rem;
     background-image: linear-gradient(
@@ -47,6 +50,8 @@ body {
 }
 
 .star {
+    display: grid;
+    place-items: center;
     color: var(--color-primary-orange);
     background-color: var(--color-neutral-lightly-dark-blue);
     width: 3rem;
@@ -54,18 +59,62 @@ body {
     padding: 0.5rem;
     border-radius: 60%;
     font-size: 130%;
-    text-align: center;
     margin-bottom: 2rem;
 }
 .review__title {
     color: var(--color-neutral-white);
     font-weight: inherit;
-    margin-bottom: 2rem;
 }
 .review__text {
     color: var(--color-neutral-light-grey);
     font-weight: inherit;
     margin-bottom: 2rem;
+}
+
+.review__buttons {
+    display: flex;
+    justify-content: space-between;
+}
+.review__button {
+    background-color: var(--color-neutral-lightly-dark-blue);
+    width: 3rem;
+    height: 3rem;
+    padding: 0.5rem;
+    border-style: none;
+    border-radius: 100%;
+    font-size: 130%;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-neutral-light-grey);
+    cursor: pointer;
+}
+.review__button:hover {
+    background-color: var(--color-primary-orange);
+    color: var(--color-neutral-white);
+}
+.review__button.selected {
+    background-color: var(--color-neutral-light-grey);
+    color: var(--color-neutral-white);
+}
+
+.review__button-submit {
+    width: 100%;
+    padding: 1rem;
+    padding-block: 0.75rem;
+    text-transform: uppercase;
+    background-color: var(--color-primary-orange);
+    color: var(--color-neutral-white);
+    border-style: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: inherit;
+    margin-bottom: 2rem;
+    position: relative;
+}
+.review__button-submit:hover {
+    background-color: var(--color-neutral-white);
+    color: var(--color-primary-orange);
 }
 
 .hidden {
