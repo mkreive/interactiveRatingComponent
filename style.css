@@ -3,6 +3,7 @@
     --color-neutral-white: hsl(0, 0%, 100%);
     --color-neutral-light-grey: hsl(217, 12%, 63%);
     --color-neutral-medium-grey: hsl(216, 12%, 54%);
+    --color-neutral-lightly-dark-blue: hsl(213, 19%, 23%);
     --color-neutral-dark-blue: hsl(213, 19%, 18%);
     --color-neutral-darker-blue: hsl(212, 20%, 13%);
     --color-neutral-very-dark-blue: hsl(216, 12%, 8%);
@@ -22,8 +23,8 @@ html {
 }
 
 body {
-    font-family: "Montserrat Alternates", sans-serif;
-    font-weight: 400;
+    font-family: "Overpass", sans-serif;
+    font-weight: 200;
     line-height: 1.6;
     background-color: var(--color-neutral-very-dark-blue);
     height: 100vh;
@@ -45,7 +46,29 @@ body {
     flex-direction: column;
 }
 
-.thankyou {
+.star {
+    color: var(--color-primary-orange);
+    background-color: var(--color-neutral-lightly-dark-blue);
+    width: 3rem;
+    height: 3rem;
+    padding: 0.5rem;
+    border-radius: 60%;
+    font-size: 130%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.review__title {
+    color: var(--color-neutral-white);
+    font-weight: inherit;
+    margin-bottom: 2rem;
+}
+.review__text {
+    color: var(--color-neutral-light-grey);
+    font-weight: inherit;
+    margin-bottom: 2rem;
+}
+
+.hidden {
     display: none;
 }
 
