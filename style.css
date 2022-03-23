@@ -1,0 +1,39 @@
+:root {
+    --color-primary-orange: hsl(25, 97%, 53%);
+    --color-neutral-white: hsl(0, 0%, 100%);
+    --color-neutral-light-grey: hsl(217, 12%, 63%);
+    --color-neutral-medium-grey: hsl(216, 12%, 54%);
+    --color-neutral-dark-blue: hsl(213, 19%, 18%);
+    --color-neutral-very-dark-blue: hsl(216, 12%, 8%);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* 1rem=10px; 10px/16px default size=62.5% */
+}
+
+body {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    background-image: linear-gradient(to bottom, #2d2e31, #1e1e21);
+    min-height: 100vh;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* color: var(--color-primary); */
