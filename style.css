@@ -4,6 +4,7 @@
     --color-neutral-light-grey: hsl(217, 12%, 63%);
     --color-neutral-medium-grey: hsl(216, 12%, 54%);
     --color-neutral-dark-blue: hsl(213, 19%, 18%);
+    --color-neutral-darker-blue: hsl(212, 20%, 13%);
     --color-neutral-very-dark-blue: hsl(216, 12%, 8%);
 }
 
@@ -17,15 +18,35 @@
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%;
-    /* 1rem=10px; 10px/16px default size=62.5% */
+    /* font-size: 62.5%; */
 }
 
 body {
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 400;
-    background-image: linear-gradient(to bottom, #2d2e31, #1e1e21);
-    min-height: 100vh;
+    line-height: 1.6;
+    background-color: var(--color-neutral-very-dark-blue);
+    height: 100vh;
+}
+
+.review,
+.thankyou {
+    width: 25%;
+    height: 45%;
+    margin: 25vh auto;
+    padding: 2rem;
+    background-image: linear-gradient(
+        to bottom,
+        var(--color-neutral-dark-blue),
+        var(--color-neutral-darker-blue)
+    );
+    border-radius: 7%;
+    display: flex;
+    flex-direction: column;
+}
+
+.thankyou {
+    display: none;
 }
 
 .attribution {
@@ -35,5 +56,3 @@ body {
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
-
-/* color: var(--color-primary); */
