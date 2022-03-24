@@ -35,8 +35,8 @@ body {
     position: relative;
     transition: transform 1s;
     transform-style: preserve-3d;
-    width: 25%;
-    height: 48%;
+    width: 23%;
+    height: 45%;
     margin: 25vh auto;
     padding: 2rem;
     background-image: linear-gradient(
@@ -49,6 +49,10 @@ body {
     flex-direction: column;
 }
 
+.thankyou {
+    align-items: center;
+}
+
 .star {
     display: grid;
     place-items: center;
@@ -58,14 +62,14 @@ body {
     height: 3rem;
     padding: 0.5rem;
     border-radius: 60%;
-    font-size: 130%;
+    font-size: 110%;
     margin-bottom: 2rem;
 }
-.review__title {
+.title {
     color: var(--color-neutral-white);
-    font-weight: inherit;
+    font-weight: bold;
 }
-.review__text {
+.text {
     color: var(--color-neutral-light-grey);
     font-weight: inherit;
     margin-bottom: 2rem;
@@ -82,7 +86,7 @@ body {
     padding: 0.5rem;
     border-style: none;
     border-radius: 100%;
-    font-size: 130%;
+    font-size: 110%;
     text-align: center;
     margin-bottom: 2rem;
     color: var(--color-neutral-light-grey);
@@ -107,10 +111,10 @@ body {
     border-style: none;
     border-radius: 2rem;
     cursor: pointer;
-    text-transform: uppercase;
     font-size: inherit;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
     margin-bottom: 2rem;
-    position: relative;
 }
 .review__button-submit:hover {
     background-color: var(--color-neutral-white);
