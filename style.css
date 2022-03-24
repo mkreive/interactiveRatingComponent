@@ -59,6 +59,10 @@ body {
     text-align: center;
 }
 
+.flipped {
+    transform: rotateY(-180deg);
+}
+
 .star {
     width: 2.75rem;
     height: 2.75rem;
