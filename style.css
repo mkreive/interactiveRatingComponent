@@ -57,18 +57,16 @@ body {
 }
 
 .star {
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 50%;
     display: grid;
     place-items: center;
-    color: var(--color-primary-orange);
-    background-color: var(--color-neutral-lightly-dark-blue);
-    width: 3rem;
-    height: 3rem;
-    padding: 0.5rem;
-    border-radius: 60%;
-    font-size: 110%;
-    margin-bottom: 2rem;
+    background: var(--color-neutral-lightly-dark-blue);
 }
+
 .title {
+    /* margin-top: 2rem; */
     color: var(--color-neutral-white);
     font-weight: bold;
 }
@@ -130,6 +128,10 @@ body {
     padding: 0.3rem 1rem;
     border-radius: 2rem;
     margin-bottom: 2rem;
+}
+
+.thankyou__illustration {
+    width: 20%;
 }
 
 .hidden {
