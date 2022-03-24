@@ -52,6 +52,9 @@ body {
 .thankyou {
     align-items: center;
 }
+.thankyou p {
+    text-align: center;
+}
 
 .star {
     display: grid;
@@ -120,15 +123,15 @@ body {
     background-color: var(--color-neutral-white);
     color: var(--color-primary-orange);
 }
+.thankyou__rating {
+    color: var(--color-primary-orange);
+    font-weight: inherit;
+    background-color: var(--color-neutral-lightly-dark-blue);
+    padding: 0.3rem 1rem;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+}
 
 .hidden {
     display: none;
-}
-
-.attribution {
-    font-size: 11px;
-    text-align: center;
-}
-.attribution a {
-    color: hsl(228, 45%, 44%);
 }
