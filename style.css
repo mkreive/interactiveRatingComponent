@@ -25,34 +25,34 @@ html {
 body {
     font-family: "Overpass", sans-serif;
     font-weight: 200;
-    line-height: 1.6;
+    line-height: 1.5rem;
     background-color: var(--color-neutral-very-dark-blue);
     height: 100vh;
+    display: grid;
+    place-items: center;
 }
 
 .review,
 .thankyou {
-    position: relative;
-    transition: transform 1s;
-    transform-style: preserve-3d;
+    display: grid;
     width: 23%;
     height: 45%;
-    margin: 25vh auto;
-    padding: 2rem;
+    padding: 2.2rem;
     background-image: linear-gradient(
         to bottom,
         var(--color-neutral-dark-blue),
         var(--color-neutral-darker-blue)
     );
-    border-radius: 7%;
-    display: flex;
-    flex-direction: column;
+    border-radius: 8%;
+    position: absolute;
+    backface-visibility: hidden;
+    /* transition: transform 1s;
+        transform-style: preserve-3d; */
 }
 
-.thankyou {
-    align-items: center;
-}
-.thankyou p {
+.thankyou,
+.thankyou .text {
+    place-items: center;
     text-align: center;
 }
 
@@ -63,10 +63,10 @@ body {
     display: grid;
     place-items: center;
     background: var(--color-neutral-lightly-dark-blue);
+    margin-bottom: 2.5rem;
 }
 
 .title {
-    /* margin-top: 2rem; */
     color: var(--color-neutral-white);
     font-weight: bold;
 }
@@ -121,17 +121,17 @@ body {
     background-color: var(--color-neutral-white);
     color: var(--color-primary-orange);
 }
+
 .thankyou__rating {
     color: var(--color-primary-orange);
     font-weight: inherit;
     background-color: var(--color-neutral-lightly-dark-blue);
     padding: 0.3rem 1rem;
     border-radius: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2.3rem;
 }
-
 .thankyou__illustration {
-    width: 20%;
+    margin-bottom: 2.3rem;
 }
 
 .hidden {
