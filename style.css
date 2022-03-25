@@ -117,17 +117,13 @@ body {
     color: var(--color-primary-orange);
 }
 
-.thankyou__illustration {
-    margin-bottom: 2.5rem;
-}
-
 .thankyou__rating {
+    display: block;
     color: var(--color-primary-orange);
-    font-weight: inherit;
     background-color: var(--color-neutral-lightly-dark-blue);
     padding: 0.3rem 1rem;
     border-radius: 2rem;
-    margin-bottom: 10rem;
+    margin: 2rem 3rem;
 }
 
 .active {
