@@ -8,20 +8,13 @@
     --color-neutral-darker-blue: hsl(212, 20%, 13%);
     --color-neutral-very-dark-blue: hsl(216, 12%, 8%);
 }
-
 *,
 *::before,
 *::after {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
-}
-
-html {
     box-sizing: border-box;
-    /* font-size: 62.5%; */
 }
-
 body {
     font-family: "Overpass", sans-serif;
     font-weight: 200;
@@ -33,13 +26,19 @@ body {
 }
 
 .wrapper {
-    margin-top: 15vh;
     width: 42ch;
-    height: 10rem;
+    height: 50vh;
+    background-color: transparent;
     perspective: 80rem;
 }
-
-.content {
+.wrapper-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+}
+.review,
+.thankyou {
     padding: 2.5rem;
     background-image: linear-gradient(
         to bottom,
@@ -47,20 +46,14 @@ body {
         var(--color-neutral-darker-blue)
     );
     border-radius: 8%;
-    position: absolute;
     backface-visibility: hidden;
     transition: transform 1s;
     transform-style: preserve-3d;
 }
 
-.thankyou,
-.thankyou .text {
-    place-items: center;
+.thankyou {
+    transform: rotateY(180deg);
     text-align: center;
-}
-
-.flipped {
-    transform: rotateY(-180deg);
 }
 
 .star {
@@ -70,7 +63,7 @@ body {
     display: grid;
     place-items: center;
     background: var(--color-neutral-lightly-dark-blue);
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
 }
 
 .title {
@@ -81,7 +74,7 @@ body {
 .text {
     color: var(--color-neutral-light-grey);
     font-weight: inherit;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 }
 
 .review__buttons {
@@ -103,10 +96,6 @@ body {
 }
 .review__button:hover {
     background-color: var(--color-primary-orange);
-    color: var(--color-neutral-white);
-}
-.active {
-    background-color: var(--color-neutral-light-grey);
     color: var(--color-neutral-white);
 }
 
@@ -138,9 +127,16 @@ body {
     margin-bottom: 2.3rem;
 }
 .thankyou__illustration {
-    margin-bottom: 2.3rem;
+    margin-bottom: 2.5rem;
 }
 
+.active {
+    background-color: var(--color-neutral-light-grey);
+    color: var(--color-neutral-white);
+}
+.flipped {
+    transform: rotateY(-180deg);
+}
 .hidden {
     display: none;
 }
