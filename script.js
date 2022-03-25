@@ -36,3 +36,7 @@ submitButton.addEventListener("click", function () {
         ratingMessage.innerText = "No rating selected";
     }
 });
+
+thankyouCard.addEventListener("click", function () {
+    wrapperInner.classList.remove("flipped");
+});
