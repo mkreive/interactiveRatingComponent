@@ -8,6 +8,7 @@ const ratingMessage = document.querySelector(".thankyou__rating");
 const reviewCard = document.querySelector(".review");
 const thankyouCard = document.querySelector(".thankyou");
 const wrapperInner = document.querySelector(".wrapper-inner");
+const errorMessage = document.querySelector(".errorMessage");
 
 // Code
 
@@ -17,9 +18,9 @@ let rating;
 ratingButtons.forEach((button) => {
     button.addEventListener("click", function (e) {
         const clickedRating = e.target;
+        errorMessage.innerText = "";
 
         ratingButtons.forEach((button) => {
-            if (button == clickedRating) return;
             button.classList.remove(active);
         });
 
@@ -29,11 +30,11 @@ ratingButtons.forEach((button) => {
 });
 
 submitButton.addEventListener("click", function () {
-    wrapperInner.classList.add("flipped");
     if (rating) {
+        wrapperInner.classList.add("flipped");
         ratingMessage.innerText = `You selected ${rating} out of 5`;
     } else {
-        ratingMessage.innerText = "No rating selected";
+        errorMessage.innerText = "Please select rating";
     }
 });
 

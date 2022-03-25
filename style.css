@@ -125,6 +125,13 @@ body {
     border-radius: 2rem;
     margin: 2rem 3rem;
 }
+.errorMessage {
+    display: grid;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 80%;
+    color: var(--color-primary-orange);
+}
 
 .active {
     background-color: var(--color-neutral-light-grey);
