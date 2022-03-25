@@ -7,11 +7,11 @@ const submitButton = document.querySelector(".review__button-submit");
 const ratingMessage = document.querySelector(".thankyou__rating");
 const reviewCard = document.querySelector(".review");
 const thankyouCard = document.querySelector(".thankyou");
+const wrapperInner = document.querySelector(".wrapper-inner");
 
 // Code
 
 const active = "active";
-ratingMessage.innerText = `No rating selected`;
 let rating;
 
 ratingButtons.forEach((button) => {
@@ -29,8 +29,10 @@ ratingButtons.forEach((button) => {
 });
 
 submitButton.addEventListener("click", function () {
-    // reviewCard.classList.add("hidden");
-    thankyouCard.classList.remove("hidden");
-    ratingMessage.innerText = `You selected ${rating} out of 5`;
-    reviewCard.classList.add("flipped");
+    wrapperInner.classList.add("flipped");
+    if (rating) {
+        ratingMessage.innerText = `You selected ${rating} out of 5`;
+    } else {
+        ratingMessage.innerText = "No rating selected";
+    }
 });
