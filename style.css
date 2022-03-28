@@ -43,8 +43,7 @@ body {
     padding: 2.5rem;
     background-image: linear-gradient(
         to bottom,
-        var(--color-neutral-dark-blue),
-        var(--color-neutral-darker-blue)
+        var(--color-neutral-darker-blue) var(--color-neutral-dark-blue)
     );
     border-radius: 8%;
     backface-visibility: hidden;
